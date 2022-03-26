@@ -35,8 +35,6 @@ function createRecipe (tit, ingredArray, menuItType) {
     title: tit,
     type: menuItType,
     ingredients: ingredArray,
-    // type: menuItType,
-    // price: formatPrice(price)
   }
 return recipeObject
 }

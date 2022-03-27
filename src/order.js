@@ -14,17 +14,23 @@ for (var i = 0; i < orders.length; i++) {
 }
 }
 
-function listItems (deliveries) {
-  var output = '';
-
-  for(var i =0; i < deliveries.length; i++) {
-    if(i === 0){
-      output = deliveries[i].item;
-    } else {
-      output = output + ", " + deliveries[i].item;
-    }
+function listItems (deliveryOrders) {
+//   var output = '';
+//
+//   for(var i =0; i < deliveries.length; i++)
+//   {if(i === 0){
+//       output = deliveries[i].item;
+//     } else {
+//       output = output + ", " + deliveries[i].item;
+//     }
+//   }
+//   return output
+// }
+var entree = [];
+  for(var i =0; i < deliveryOrders.length; i++) {
+    entree.push(deliveryOrders[i].item);
   }
-  return output
+  return entree.join(", ")
 }
 
 function searchOrder (orderList, orderName) {
